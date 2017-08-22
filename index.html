@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>DBZ Game</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/style.css"> 
+  <link rel="stylesheet" href="css/reset.css"> 
+  <script src="javascript/game.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="container">
+		<!-- Title section -->
+		<div class="row">
+			<div class="col-md-12 col-centered text-center">
+				<h1 class="title">
+					DBZ Collector Game
+				<h1>
+			</div>
+		</div>
+		
+		<!-- Instruction section -->
+		<div class="row">
+			<div class="col-md-12 col-centered text-center">
+				<div class="instructions">
+					<p class="instFont">You will be given a random target power level at the start of the game.</p>
+					<p class="instFont">There are four fighters below. By clicking on a fighter you will add a specific amount of points to your total power level.</p>
+					<p class="instFont">You win the game by matching your total power level to the random number. You lose the game if your total power level goes above the random number.</p>
+					<p class="instFont">The value of each fighter is hidden from you until you click on it.</p>
+					<p class="instFont">Each time the game starts, the game will change the values of each fighter.</p>
+					<br>
+					
+				</div>
+					
+			</div>
+		</div>
+		<!-- target and win/loss -->
+		<div class="row">
+			<div class="col-md-12 col-center text-center">
+				<div class="targetNumber">
+					<span id="targetNumber">
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 col-center text-center">
+				<div class="winLoss">
+					<p id="win">Wins: </p>
+					<p id="loss">Losses: </p>
+				</div>
+			</div>
+		</div>
+		<br>
+		<!-- images -->
+		<div class="row">
+			<div class="images">
+				<div class="col-md-3">
+					<button><img class="gokuImg" src=images/goku.png></img>
+				</div>
+				<div class="col-md-3">
+					<button><img class="friezaImg" src=images/frieza.png></img>
+				</div>
+				<div class="col-md-3">
+					<button><img class="buuImg" src=images/buu.png></img>
+				</div>
+				<div class="col-md-3">
+					<button><img class="guldoImg" src=images/guldo.png></img>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+		
+	
+
+	</div>	
+
+</body>
+
+
+
+
+
+
+</html>
