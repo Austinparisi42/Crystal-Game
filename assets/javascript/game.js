@@ -33,8 +33,13 @@ randomNumbers();
 
 function reset() {
 	randomTargetNumber = Math.floor(Math.random() * (120-19) + 19);
+	numberOptions = [];
 	console.log(randomTargetNumber);
 	randomNumbers();
+	$(".gokuImg").attr("data-gokuvalue", numberOptions[0]);
+	$(".friezaImg").attr("data-friezavalue", numberOptions[1]);
+	$(".buuImg").attr("data-buuvalue", numberOptions[2]);
+	$(".guldoImg").attr("data-guldovalue", numberOptions[3]);
 	console.log(numberOptions);
 	$("#targetNumber").html("<span>" + randomTargetNumber + "</span>");
 	counter = 0;
