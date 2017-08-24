@@ -40,7 +40,7 @@ function reset() {
 	counter = 0;
 	$("#scoreDisplay").html("<span>" + counter + "</span>");
 
-};
+	};
 
 $(".gokuImg").attr("data-gokuvalue", numberOptions[0]);
 $(".friezaImg").attr("data-friezavalue", numberOptions[1]);
