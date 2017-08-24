@@ -12,26 +12,24 @@ var wins = 0;
 
 var losses = 0;
 
-var goku = $(".gokuImg");
+// var goku = $(".gokuImg");
 
-var frieza = $(".friezaImg");
+// var frieza = $(".friezaImg");
 
-var buu = $(".buuImg");
+// var buu = $(".buuImg");
 
-var guldo = $(".guldoImg");
+// var guldo = $(".guldoImg");
 
 // display target
 
 console.log(randomTargetNumber);
 
+// for(var i = 0; i < 4; i++) {
+// 	numberOptions.push(Math.floor(Math.random() * (5-4) + 19))
+// }
 // give buttons number
 
-goku.attr("data-gokuvalue", numberOptions[0]);
-frieza.attr("data-friezavalue", numberOptions[1]);
-buu.attr("data-buuvalue", numberOptions[2]);
-guldo.attr("data-guldovalue", numberOptions[3]);
-
-// reset
+randomNumbers();
 
 function reset() {
 	randomTargetNumber = Math.floor(Math.random() * (120-19) + 19);
@@ -44,12 +42,21 @@ function reset() {
 
 };
 
+$(".gokuImg").attr("data-gokuvalue", numberOptions[0]);
+$(".friezaImg").attr("data-friezavalue", numberOptions[1]);
+$(".buuImg").attr("data-buuvalue", numberOptions[2]);
+$(".guldoImg").attr("data-guldovalue", numberOptions[3]);
+
+// reset
+
+
+
 // win
 
 function win() {
 	alert("You win!");
 	wins++;
-	$("win").html("Wins: " + wins);
+	$("#win").html("Wins: " + wins);
 	reset();
 };
 
@@ -58,7 +65,7 @@ function win() {
 function lose() {
 	alert("You lose!");
 	losses++;
-	$("loss").html("Losses: " + losses);
+	$("#loss").html("Losses: " + losses);
 	reset();
 };
 
@@ -90,12 +97,12 @@ $(".gokuImg").on ('click', function(){
     counter += gokuValue;
     $("#scoreDisplay").html("<span>" + counter + "</span>");
     if (counter === randomTargetNumber) {
-      alert("You win!");
+      
       win();
     }
 
     else if (counter >= randomTargetNumber) {
-      alert("You lose!!");
+      
       lose();
     }
 	
@@ -107,12 +114,12 @@ $(".friezaImg").on ('click', function(){
     counter += friezaValue;
     $("#scoreDisplay").html("<span>" + counter + "</span>");
     if (counter === randomTargetNumber) {
-      alert("You win!");
+      
       win();
     }
 
     else if (counter >= randomTargetNumber) {
-      alert("You lose!!");
+      
       lose();
     }
 	
@@ -125,12 +132,12 @@ $(".buuImg").on ('click', function(){
     counter += buuValue;
     $("#scoreDisplay").html("<span>" + counter + "</span>");
     if (counter === randomTargetNumber) {
-      alert("You win!");
+      
       win();
     }
 
     else if (counter >= randomTargetNumber) {
-      alert("You lose!!");
+      
       lose();
     }
 	
@@ -142,12 +149,12 @@ $(".guldoImg").on ('click', function(){
     counter += guldoValue;
     $("#scoreDisplay").html("<span>" + counter + "</span>");
     if (counter === randomTargetNumber) {
-      alert("You win!");
+      
       win();
     }
 
     else if (counter >= randomTargetNumber) {
-      alert("You lose!!");
+      
       lose();
     }
 	
